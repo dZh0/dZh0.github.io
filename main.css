@@ -196,3 +196,17 @@ a:hover{
 		margin: 0 auto 1em;
 	}
 }
+
+@media only screen and (min-device-pixel-ratio: 2) {
+    .graphic {
+		width:213px;
+		height: 120px;
+	}
+}
+
+@media only screen and (min-device-pixel-ratio: 3) {
+    .graphic {
+		width:160px;
+		height: 90px;
+	}
+}
