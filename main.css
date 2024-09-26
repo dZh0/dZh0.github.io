@@ -6,6 +6,7 @@
 	--color-light:						grey;
 	/*menu*/
 	--content-width:					1200px;
+	--project-width:					940px;
 	--icon-size:						5em;
 	--project-margin:					2.5em;
 }
@@ -13,6 +14,28 @@
 *{
 	box-sizing: border-box;
 	font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+html{
+	background-color: var(--color-base);
+	background-image: url("Images/line.gif");
+	background-repeat: repeat-x;
+	overflow: auto;
+}
+
+body{
+	background-color: var(--color-background);
+	background-image: url("Images/line.gif");
+	background-repeat: repeat-x;
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: 0 3em;
+	overflow: auto;
+}
+
+main{
+
+	text-align: center;
 }
 
 h1{
@@ -39,39 +62,20 @@ h4{
 	margin: 0;
 }
 
-html{
-	background-color: var(--color-base);
-	background-image: url("Images/line.gif");
-	background-repeat: repeat-x;
-	overflow: auto;
-}
-
-body{
-	background-color: var(--color-background);
-	background-image: url("Images/line.gif");
-	background-repeat: repeat-x;
-	max-width: var(--content-width);
-	margin: 0 auto;
-	padding: 0 3em;
-	overflow: auto;
-}
-
-main{
-
-	text-align: center;
-}
-
 i{
 	margin-right: 0.5em;
 }
 
 #about p{
-	margin: 0 var(--icon-size);
+	margin: 0 auto;
+	padding: 0 1em;
+	max-inline-size: 78ch;
 	text-align: center;
 }
 
 #links{
 	margin-top: 2em;
+	text-align: center;
 }
 
 a{
@@ -122,7 +126,7 @@ a:hover{
 	text-align: left;
 	background-color: var(--color-project-background);
 	box-shadow: 5px 5px 10px lightgrey;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .project .genre::before{
@@ -149,6 +153,10 @@ a:hover{
 	content: " | ";
 }
 
+.project a{
+	margin: 0 auto;
+}
+
 .graphic{
 	width:427px;
 	height: 240px;
@@ -159,6 +167,9 @@ a:hover{
 
 
 @media screen and (max-width: 1042px) {
+	body{
+		padding: 0;
+	}
 	header{
 		text-align: center;
 	}
@@ -168,11 +179,16 @@ a:hover{
 	}
 	.position{
 		margin-left: var(--project-margin);
+		font-size: 66%;
 	}
 	#projects section{
 		border-left: none;
 		margin: 0;
 		padding: 0;
+	}
+	.project{
+		margin: var(--project-margin) auto;
+		max-width: var(--project-width);
 	}
 	.graphic{
 		float: none;
