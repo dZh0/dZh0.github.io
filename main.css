@@ -19,14 +19,14 @@
 html{
 	color: var(--color-foreground);
 	background-color: var(--color-base);
-	background-image: url("Images/line.gif");
+	background-image: url("Images/line.png");
 	background-repeat: repeat-x;
 	overflow: auto;
 }
 
 body{
 	background-color: var(--color-background);
-	background-image: url("Images/line.gif");
+	background-image: url("Images/line.png");
 	background-repeat: repeat-x;
 	max-width: var(--content-width);
 	margin: 0 auto;
