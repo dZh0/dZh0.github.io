@@ -1,9 +1,9 @@
 :root{
-	--color-base:						lightgrey;
-	--color-background:					white;
-	--color-project-background:			whitesmoke;
-	--color-foreground:					black;
-	--color-light:						grey;
+	--color-base:						#c4c1ba;
+	--color-background:					#f3efe7;
+	--color-project-background:			#e7e3db;
+	--color-foreground:					#2e2d2c;
+	--color-light:						#94928c;
 	/*menu*/
 	--content-width:					1200px;
 	--project-width:					940px;
@@ -17,6 +17,7 @@
 }
 
 html{
+	color: var(--color-foreground);
 	background-color: var(--color-base);
 	background-image: url("Images/line.gif");
 	background-repeat: repeat-x;
@@ -75,11 +76,14 @@ i{
 
 #links{
 	margin-top: 2em;
+	display: block;
 	text-align: center;
+	clear: both;
 }
 
 a{
 	color: var(--color-foreground);
+	background-color: var(--color-background);
 	border: 1px solid var(--color-foreground);
 	text-align: center;
 	text-decoration: none;
@@ -125,7 +129,11 @@ a:hover{
 	padding: 2.5em;
 	text-align: left;
 	background-color: var(--color-project-background);
-	box-shadow: 5px 5px 10px lightgrey;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.project > div{
 	overflow: hidden;
 }
 
