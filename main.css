@@ -147,10 +147,11 @@ a:hover{
 
 .project li{
 	display: inline;
+	list-style-type: none;
 }
 
 .project li + li::before{
-	content: " | ";
+	content: " • ";
 }
 
 .project a{
@@ -158,8 +159,9 @@ a:hover{
 }
 
 .graphic{
-	width:427px;
-	height: 240px;
+	aspect-ratio: 16 / 9;
+	width: 50%;
+	padding-bottom: 5;
 	margin: 0 1em 0 0;
 	background-color: gray;
 	float: left;
@@ -179,7 +181,7 @@ a:hover{
 	}
 	.position{
 		margin-left: var(--project-margin);
-		font-size: 66%;
+		font-size: 75%;
 	}
 	#projects section{
 		border-left: none;
@@ -191,22 +193,9 @@ a:hover{
 		max-width: var(--project-width);
 	}
 	.graphic{
-		float: none;
+		width: 100%;
 		display: block;
 		margin: 0 auto 1em;
-	}
-}
-
-@media only screen and (min-device-pixel-ratio: 2) {
-    .graphic {
-		width:213px;
-		height: 120px;
-	}
-}
-
-@media only screen and (min-device-pixel-ratio: 3) {
-    .graphic {
-		width:160px;
-		height: 90px;
+		float: none;
 	}
 }
