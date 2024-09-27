@@ -184,11 +184,11 @@ a:hover{
 
 
 @media screen and (max-width: 1042px) {
-	body{
-		padding: 0;
-	}
 	header{
 		grid-template-columns: auto min-content auto;
+	}
+	main{
+		padding: 0;
 	}
 	a{
 		display: block;
